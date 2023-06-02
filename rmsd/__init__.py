@@ -1,6 +1,7 @@
 # flake8: noqa
 from .calculate_rmsd import *
 from .calculate_rmsd import __doc__, __version__
+from .calc_rmsd_pythonbindings import * 
 
 __all__ = [
     "str_atom",
@@ -39,6 +40,7 @@ __all__ = [
     "get_coordinates_xyz_lines",
     "get_coordinates_xyz",
     "main",
+    "get_rmsd",
 ]
 
 if __name__ == "__main__":
