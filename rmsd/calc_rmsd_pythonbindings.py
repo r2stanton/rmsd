@@ -14,9 +14,9 @@ except ImportError:  # pragma: no cover
     qml = None  # pragma: no cover
 
 def get_rmsd(p_all_atoms, p_all, q_all_atoms, q_all, reorder = True,
-             reorder_method = 'brute', rotation_method = 'kabsch',
+             reorder_method = 'hungarian', rotation_method = 'kabsch',
              use_reflections = False, use_ref_stereo = False,
-             output = True, print_rmsd = True) -> float:
+             print_rmsd = True) -> float:
 
     """
 

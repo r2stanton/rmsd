@@ -10,7 +10,6 @@ def test_shuffled_atom_ordering():
     r = get_rmsd(base.get_atomic_numbers(), base.positions,
                  shuf.get_atomic_numbers(), shuf.positions,
                  rotation_method = "kabsch",
-                 output = False,
                  reorder_method = "hungarian",
                  reorder = True,
                  print_rmsd = False)
@@ -27,7 +26,6 @@ def test_shuff_rot_trans():
     r = get_rmsd(base.get_atomic_numbers(), base.positions,
                  shuf.get_atomic_numbers(), shuf.positions,
                  rotation_method = "kabsch",
-                 output = False,
                  reorder_method = "hungarian",
                  reorder = True,
                  print_rmsd = False)
@@ -43,7 +41,6 @@ def test_rattle():
     r = get_rmsd(base.get_atomic_numbers(), base.positions,
                  ratt.get_atomic_numbers(), ratt.positions,
                  rotation_method = "kabsch",
-                 output = False,
                  reorder_method = "hungarian",
                  reorder = True,
                  print_rmsd = False)
@@ -61,7 +58,6 @@ def test_rattle_shuffle():
     r = get_rmsd(base.get_atomic_numbers(), base.positions,
                  ratt_s.get_atomic_numbers(), ratt_s.positions,
                  rotation_method = "kabsch",
-                 output = False,
                  reorder_method = "hungarian",
                  reorder = True,
                  print_rmsd = False)
@@ -81,7 +77,6 @@ def test_base_package():
     r = get_rmsd(base.get_atomic_numbers(), base.positions,
                  r_t.get_atomic_numbers(), r_t.positions,
                  rotation_method = "kabsch",
-                 output = False,
                  reorder_method = "hungarian",
                  reorder = True,
                  print_rmsd = False)
